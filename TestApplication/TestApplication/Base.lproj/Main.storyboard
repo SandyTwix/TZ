@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dP-55-7y2" customClass="InsertableTextField" customModule="TestApplication" customModuleProvider="target">
+                                <rect key="frame" x="20" y="100" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="PPd-Ix-FIG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOu-aa-LDJ">
+                                <rect key="frame" x="32" y="107" width="25" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HND-Pu-oTj" customClass="InsertableTextField" customModule="TestApplication" customModuleProvider="target">
+                                <rect key="frame" x="20" y="158" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="8Nu-LX-wz9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfL-Jq-elG">
+                                <rect key="frame" x="33" y="165" width="48" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Персональные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgk-zR-HA3">
+                                <rect key="frame" x="20" y="68" width="174" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дети (макс. 5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqM-KJ-XGy">
+                                <rect key="frame" x="20" y="239" width="114" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUt-9s-3bE" customClass="PlusButton" customModule="TestApplication" customModuleProvider="target">
+                                <rect key="frame" x="154" y="224" width="240" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RO6-eV-lom"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="tintColor" red="0.4058060681237543" green="0.74875321601993605" blue="0.89322255710659904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="  Добавить ребенка" image="plus" catalog="system">
+                                    <color key="titleColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ajm-12-Hxv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0e-Sc-BnZ" customClass="ClearButton" customModule="TestApplication" customModuleProvider="target">
+                                <rect key="frame" x="81" y="812" width="252" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vAI-XH-K5l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Очистить">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYL-VZ-ebK"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="160" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wKP-tU-Zyz">
+                                <rect key="frame" x="0.0" y="282" width="414" height="522"/>
+                                <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="150" id="IYs-1l-ahX" customClass="KidCell" customModule="TestApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IYs-1l-ahX" id="NMS-CH-bac">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngb-26-0Ll" customClass="InsertableTextField" customModule="TestApplication" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="22" width="180" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="nameAddTextField:" destination="IYs-1l-ahX" eventType="editingDidEnd" id="smG-9H-FUo"/>
+                                                    </connections>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzh-Pe-tPs">
+                                                    <rect key="frame" x="32" y="29" width="25" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yr-f9-4dM" customClass="InsertableTextField" customModule="TestApplication" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="91" width="180" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="ageAddTextField:" destination="IYs-1l-ahX" eventType="editingDidEnd" id="L4n-pB-Qk2"/>
+                                                    </connections>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Возраст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vQ-Ck-V3L">
+                                                    <rect key="frame" x="33" y="98" width="48" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezj-i8-IrN">
+                                                    <rect key="frame" x="208" y="31" width="58" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                    <state key="normal" title="Удалить">
+                                                        <color key="titleColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="deleteRow:" destination="IYs-1l-ahX" eventType="touchUpInside" id="uGF-iX-aBl"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ageTextField" destination="5yr-f9-4dM" id="d6E-7H-lbt"/>
+                                            <outlet property="nameTextField" destination="ngb-26-0Ll" id="oAJ-0T-c1U"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="W08-sv-OGl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NqA-Ia-pwt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vUt-9s-3bE" firstAttribute="top" secondItem="HND-Pu-oTj" secondAttribute="bottom" constant="18" id="1qy-6h-Mnr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kgk-zR-HA3" secondAttribute="trailing" symbolic="YES" id="2wi-f4-jv5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q0e-Sc-BnZ" secondAttribute="bottom" id="3fM-1H-mzc"/>
+                            <constraint firstItem="HND-Pu-oTj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3ze-Fs-07c"/>
+                            <constraint firstItem="0dP-55-7y2" firstAttribute="top" secondItem="kgk-zR-HA3" secondAttribute="bottom" constant="12" id="5PY-u0-Q4k"/>
+                            <constraint firstItem="0dP-55-7y2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5aC-UB-H0u"/>
+                            <constraint firstItem="FqM-KJ-XGy" firstAttribute="top" secondItem="HND-Pu-oTj" secondAttribute="bottom" constant="33" id="5v7-yJ-SBP"/>
+                            <constraint firstItem="FqM-KJ-XGy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7nr-sY-I2T"/>
+                            <constraint firstItem="kgk-zR-HA3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AFL-bk-g8X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0dP-55-7y2" secondAttribute="trailing" constant="20" id="AQa-rC-NFP"/>
+                            <constraint firstItem="vUt-9s-3bE" firstAttribute="centerY" secondItem="FqM-KJ-XGy" secondAttribute="centerY" id="JP8-tK-vsR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gfL-Jq-elG" secondAttribute="trailing" symbolic="YES" id="MFb-ok-pBZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKP-tU-Zyz" secondAttribute="trailing" id="NVP-0O-Bgq"/>
+                            <constraint firstItem="q0e-Sc-BnZ" firstAttribute="top" secondItem="wKP-tU-Zyz" secondAttribute="bottom" constant="8" symbolic="YES" id="PxK-W1-Fwj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HND-Pu-oTj" secondAttribute="trailing" constant="20" id="SBz-kX-qbH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q0e-Sc-BnZ" secondAttribute="trailing" constant="81" id="XiF-F5-I6b"/>
+                            <constraint firstItem="vUt-9s-3bE" firstAttribute="leading" secondItem="FqM-KJ-XGy" secondAttribute="trailing" constant="20" id="bkJ-F8-ViI"/>
+                            <constraint firstItem="nOu-aa-LDJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="eeT-Ma-8EI"/>
+                            <constraint firstItem="wKP-tU-Zyz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h9l-QW-qbm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nOu-aa-LDJ" secondAttribute="trailing" symbolic="YES" id="kgf-PF-WHq"/>
+                            <constraint firstItem="wKP-tU-Zyz" firstAttribute="top" secondItem="vUt-9s-3bE" secondAttribute="bottom" constant="8" symbolic="YES" id="lXz-1T-ChF"/>
+                            <constraint firstItem="kgk-zR-HA3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="mRJ-bi-oy3"/>
+                            <constraint firstItem="gfL-Jq-elG" firstAttribute="top" secondItem="0dP-55-7y2" secondAttribute="bottom" constant="17" id="nRb-t3-dId"/>
+                            <constraint firstItem="HND-Pu-oTj" firstAttribute="top" secondItem="0dP-55-7y2" secondAttribute="bottom" constant="10" id="oqz-fy-tfs"/>
+                            <constraint firstItem="gfL-Jq-elG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="pDZ-Uq-9zd"/>
+                            <constraint firstItem="q0e-Sc-BnZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="sJI-tT-h2w"/>
+                            <constraint firstItem="HND-Pu-oTj" firstAttribute="top" secondItem="nOu-aa-LDJ" secondAttribute="bottom" constant="36" id="vgD-cc-UVe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vUt-9s-3bE" secondAttribute="trailing" constant="20" id="xYE-oh-Yvs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AddButtonOutlet" destination="vUt-9s-3bE" id="Das-2A-3Hn"/>
+                        <outlet property="ageTF" destination="HND-Pu-oTj" id="zi4-TS-LT8"/>
+                        <outlet property="nameTF" destination="0dP-55-7y2" id="IDA-Of-AAl"/>
+                        <outlet property="tableView" destination="wKP-tU-Zyz" id="1gh-UX-Oxw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
